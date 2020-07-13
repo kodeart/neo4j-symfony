@@ -22,7 +22,7 @@
         "symfony/flex": "^1.8",
         "symfony/framework-bundle": "^4.4 || ^5.0",
         "symfony/http-kernel": "^4.4 || ^5.0",
-        "twig/twig": "^1.18 || ^2.0"
+        "twig/twig": "^1.18 || ^2.0 || ^3.0"
     },
     "require-dev": {
         "symfony/phpunit-bridge": "^4.4 || ^5.0",
