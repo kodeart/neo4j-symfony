@@ -18,14 +18,14 @@
         "php": "^7.2",
         "longitude-one/neo4j-bolt": "^1.0",
         "longitude-one/neo4j-php-client": "^1.0",
-        "symfony/dependency-injection": "^4.4 || ^5.0",
+        "symfony/dependency-injection": "5.1.*",
         "symfony/flex": "^1.8",
-        "symfony/framework-bundle": "^4.4 || ^5.0",
-        "symfony/http-kernel": "^4.4 || ^5.0",
+        "symfony/framework-bundle": "5.1.*",
+        "symfony/http-kernel": "5.1.*",
         "twig/twig": "^1.18 || ^2.0 || ^3.0"
     },
     "require-dev": {
-        "symfony/phpunit-bridge": "^4.4 || ^5.0",
+        "symfony/phpunit-bridge": "5.1.*",
         "matthiasnoback/symfony-dependency-injection-test": "^4.1"
     },
     "suggest": {
@@ -41,6 +41,10 @@
     },
     "scripts": {
         "test": "simple-phpunit",
-        "test-ci": "simple-phpunit --coverage-text --coverage-clover=build/coverage.xml"
+        "test-ci": "simple-phpunit --coverage-text --coverage-clover=build/coverage.xml",
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+        }
     }
 }
